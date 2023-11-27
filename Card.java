@@ -6,11 +6,14 @@ private String cardNumber;
 private String cardTexture;
 // private GraphicsObject shape;
 
-    public Card(String shape, String color, String number, String texture){
-
+    public Card(String color, String shape, String fill, String number){
+        this.cardShape=shape;
         this.cardColor=color;
         this.cardNumber=number;
-        this.cardTexture=texture;
+        this.cardTexture=fill;
 
+    }
+    public String toString(){
+        return "["+this.cardColor+this.cardShape+this.cardTexture+this.cardNumber+"]";
     }
 }
